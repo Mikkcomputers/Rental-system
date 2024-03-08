@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental system</title>
+    <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lineawesome/lineawesome/css/line-awesome.min.css">
+<link rel="stylesheet" href="../style/index.css">
+<style>
+        form{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            /* margin-left: 50px; */
+            color: darkblue;
+        }
+        .col-md-5{
+            margin:5px;
+            margin-right: 7px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cont">
+        <nav>
+            <ul style="background: white; margin-bottom: 50px;">
+                <li style="background: white; color: blue;"><a style="color: blue;" href="dashboard.php">Dashboard</a></li>
+            </ul>
+            <ul class="nab1">
+                <li>
+                    <a href="renting.html">Rent</a>
+                </li>
+                <li>
+                    <a href="user.php">User</a>
+                </li>
+                <li>
+                    <a href="About.html">About</a>
+                </li>
+                <li style="margin-top: 4rem;">
+                    <a href="login.html" >Logout</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <article>
+            <header>
+                <ul>
+                    
+                    <li>
+                        <a href="renting.html">Rent</a>
+                    </li>
+                    <li>
+                        <a href="user.php">User</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Logout</a>
+                    </li>
+                    
+                </ul>
+            </header>
+            
+            <h4 class="text-center text-maroon" style="color:darkblue;">Renting</h4>
+            <form action="../saver/rent.php" method="post" class=" text-center">
+            
+            <div class="col-md-5 mt-5">
+                <div class="form-group">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" class="form-control mb-2" id=""  placeholder="Enter Your fullname">
+                </div>
+                <div class="form-group">
+                    <label for="Phone Number">Phone Number</label>
+                <input type="text" name="phone1" id="" class="form-control mb-2" placeholder="Phone number 1">
+                <input type="text" name="phone2" id="" class="form-control mb-2" placeholder="Phone number 2">
+                </div>
+                <div class="form-group">
+                    <label for="sponsor">Garantor</label>
+                <input type="text" name="garantor" id="" class="form-control mb-2" placeholder="Garantor">
+                </div>
+                <div class="form-group">
+                    <label for="sponsor">Type Rent Material</label>
+                    <select name="type" id="" class="form-select mb-2">
+                        <option value="Canopies">Canopies</option>
+                        <option value="Chairs">Chairs</option>
+                        <option value="Conopies/Chairs">Conopies/Chairs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-5 mt-5">
+                <div class="form-group">
+                    <label for="qty">Quantity</label>
+                    <input type="number" value="0" name="quantity" class="form-control mb-2" placeholder="Quantity" id="">
+                </div>
+                <div class="form-group">
+                    <label for="qty">Price</label>
+                    <input type="number" value="0" name="price" class="form-control mb-2" placeholder="Price" id="">
+                </div>
+                <div class="form-group">
+                    <label for="from">Rent From</label>
+                    <input type="date" name="from" class="form-control mb-2" id="">
+                    <label for="to">To</label>
+                    <input type="date" name="to" class="form-control mb-2" id="">
+                </div>
+            <button name="btn_rent" class="btn btn-primary form-control">send</button>
+    
+               
+            </div>
+            </form>
+        </article>
+
+    </div>
+</body>
+</html>

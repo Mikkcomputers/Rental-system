@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+    <style>
+        form{
+            display: flex;
+            flex-direction: row;
+            /* margin-right: 5px; */
+        }
+        .col-md-4{
+            margin-right: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post">
+            
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" class="form-control mb-2" id=""  placeholder="Enter Your fullname">
+            </div>
+            <div class="form-group">
+                <label for="Phone Number">Phone Number</label>
+            <input type="text" name="phone1" id="" class="form-control mb-2" placeholder="Phone number 1">
+            <input type="text" name="phone"2 id="" class="form-control mb-2" placeholder="Phone number 2">
+            </div>
+            <div class="form-group">
+                <label for="sponsor">Garantor</label>
+            <input type="text" name="sponsor" id="" class="form-control mb-2" placeholder="Garantor">
+            </div>
+            <div class="form-group">
+                <label for="sponsor">Type Rent Material</label>
+                <select name="type" id="" class="form-select mb-2">
+                    <option value="Canopies">Canopies</option>
+                    <option value="Chairs">Chairs</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="qty">Quantity</label>
+                <input type="number" value="0" name="qty" class="form-control mb-2" placeholder="Quantity" id="">
+            </div>
+            <div class="form-group">
+                <label for="qty">Price</label>
+                <input type="number" value="0" name="qty" class="form-control mb-2" placeholder="Price" id="">
+            </div>
+            <div class="form-group">
+                <label for="from">Rent From</label>
+                <input type="date" name="" class="form-control mb-2" id="">
+                <label for="to">To</label>
+                <input type="date" name="" class="form-control mb-2" id="">
+            </div>
+        <button class="btn btn-primary form-control">send</button>
+
+           
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
